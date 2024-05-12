@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum NavigationState {
+    case splashScreen
+    case homeScreen
+}

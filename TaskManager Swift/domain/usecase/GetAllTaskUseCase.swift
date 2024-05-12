@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+class GetAllTaskUseCase {
+    
+    
+    static var shared = GetAllTaskUseCase(homeRepository: HomeRepositoryImpl.shared)
+    
+    var homeRepository : HomeRepository
+    
+    init(homeRepository: HomeRepository) {
+        self.homeRepository = homeRepository
+    }
+    
+    func execute() async -> [Tasks] {
+        return await homeRepository.getAllTask()
+    }
+    
+}

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum NavigationAction {
+    case navigateToSplashScreen
+    case navigateToHome
+}

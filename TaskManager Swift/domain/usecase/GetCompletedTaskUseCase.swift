@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+class GetCompletedTaskUseCase {
+    
+    static var shared = GetCompletedTaskUseCase(homeRepository: HomeRepositoryImpl.shared)
+    
+    var homeRepository : HomeRepository
+    
+    init(homeRepository: HomeRepository) {
+        self.homeRepository = homeRepository
+    }
+    
+    func execute() async -> [Tasks] {
+        return await homeRepository.getCompletedTask()
+    }
+}

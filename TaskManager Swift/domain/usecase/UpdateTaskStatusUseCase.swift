@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+class UpdateTaskStatusUseCase {
+    
+    static var shared = UpdateTaskStatusUseCase(homeRepository: HomeRepositoryImpl.shared)
+    
+    var homeRepository : HomeRepository
+    
+    init(homeRepository: HomeRepository) {
+        self.homeRepository = homeRepository
+    }
+    
+    func execute(_ task : Tasks) async -> Int64 {
+        return await homeRepository.updateTaskStatus(task)
+    }
+    
+}

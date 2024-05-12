@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class Singleton {
+    
+    
+    static var database = DatabaseManager()
+    
+    static var taskTable = TaskTable(db: database.getDb())
+    
+}

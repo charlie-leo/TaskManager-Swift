@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
+
+extension Font {
+    
+    
+    static func itim (size: CGFloat ) -> Font {
+        Font.custom("Itim", size: size)
+    }
+    
+}

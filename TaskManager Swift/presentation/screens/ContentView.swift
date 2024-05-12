@@ -9,50 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var isPresentingDetailView = false
+    @EnvironmentObject var store: NavigationStore
     
     var body: some View {
-        NavigationView {
-            VStack(){
-                Text("Main View")
-                    .font(.body)
+        VStack {
+            switch store.state {
+            case .splashScreen:
+                LaunchScreenView()
+            case .homeScreen:
+                HomeScreenView()
             }
-                    .navigationTitle("Main")
-                       .toolbar {
-                           ToolbarItem(placement: .navigationBarTrailing) {
-                               Button(action: {
-                                isPresentingDetailView = true
-                               }) {
-                               Image(systemName: "plus")
-                               }
-                           }
-                       }
-               }
-        .sheet(isPresented: $isPresentingDetailView) {
-                            DetailView()
-                        }
-    }
-}
-
-struct DetailView: View {
-    var body: some View {
-        Text("Detail View")
-            .navigationTitle("Detail")
-            .toolbar{
-                ToolbarItem(placement: .navigationBarTrailing){
-                    NavigationLink(destination: TaskView() ){
-                        Image(systemName: "plus")
-                    }
-                }
-            }
-    }
-}
-
-struct TaskView: View {
-    var body: some View {
-        Text("Task View")
-            .navigationTitle("Task")
-            
+        }
+        
     }
 }
 

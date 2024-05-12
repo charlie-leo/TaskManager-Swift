@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum HomeEvents {
+    case addTask(Tasks)
+    case completeTask(Tasks)
+    case completeNotTask(Tasks)
+    
+}

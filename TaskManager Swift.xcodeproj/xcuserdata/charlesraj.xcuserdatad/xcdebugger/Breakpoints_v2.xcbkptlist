@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3F84338A-A629-4247-A10C-561A9497E0D4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DB460F9-D1CE-4AA8-A489-D4315F438BB8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskManager Swift/presentation/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "getTaskList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7DB460F9-D1CE-4AA8-A489-D4315F438BB8 - 5c0e921238b3d152"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TaskManager_Swift.HomeViewModel.getTaskList() -&gt; ()"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/presentation/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "7DB460F9-D1CE-4AA8-A489-D4315F438BB8 - b626147e041bde0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in TaskManager_Swift.HomeViewModel.getTaskList() -&gt; ()"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/presentation/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "7DB460F9-D1CE-4AA8-A489-D4315F438BB8 - a9b81417ff1ad58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TaskManager_Swift.HomeViewModel.getTaskList() -&gt; ()"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/presentation/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77DF5FB4-1E7C-4950-BAE2-01407E778221"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskManager Swift/presentation/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "getTaskList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5056E7E2-1412-4D30-98BA-59A4A39415CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskManager Swift/data/database/tables/TaskTable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "insert(task:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7139812-C5B1-496C-A786-9F5E1E33960D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskManager Swift/data/database/tables/TaskTable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "update(task:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C7139812-C5B1-496C-A786-9F5E1E33960D - 725b8ebc080ef0ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TaskManager_Swift.TaskTable.update(task: TaskManager_Swift.Tasks) async -&gt; Swift.Int64"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/data/database/tables/TaskTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "C7139812-C5B1-496C-A786-9F5E1E33960D - 725b8ebc080ef084"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TaskManager_Swift.TaskTable.update(task: TaskManager_Swift.Tasks) async -&gt; Swift.Int64"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/data/database/tables/TaskTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3EE2251-63B5-4A9F-88CF-1A85F3D7D2F0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskManager Swift/data/database/tables/TaskTable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "update(task:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F3EE2251-63B5-4A9F-88CF-1A85F3D7D2F0 - 725b8ebc080ef7fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TaskManager_Swift.TaskTable.update(task: TaskManager_Swift.Tasks) async -&gt; Swift.Int64"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/data/database/tables/TaskTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "1688">
+               </Location>
+               <Location
+                  uuid = "F3EE2251-63B5-4A9F-88CF-1A85F3D7D2F0 - 725b8ebc080ef7fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TaskManager_Swift.TaskTable.update(task: TaskManager_Swift.Tasks) async -&gt; Swift.Int64"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/data/database/tables/TaskTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "2152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60EEA5AA-5094-4574-BD27-743D0C2E26EB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskManager Swift/data/database/tables/TaskTable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "update(task:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "60EEA5AA-5094-4574-BD27-743D0C2E26EB - 725b8ebc080ef71f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TaskManager_Swift.TaskTable.update(task: TaskManager_Swift.Tasks) async -&gt; Swift.Int64"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/data/database/tables/TaskTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "2168">
+               </Location>
+               <Location
+                  uuid = "60EEA5AA-5094-4574-BD27-743D0C2E26EB - 725b8ebc080ef71f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TaskManager_Swift.TaskTable.update(task: TaskManager_Swift.Tasks) async -&gt; Swift.Int64"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/data/database/tables/TaskTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "2840">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44E9917D-FF46-4642-95B6-C7E513AFD416"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskManager Swift/data/database/tables/TaskTable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "update(task:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "44E9917D-FF46-4642-95B6-C7E513AFD416 - 725b8ebc080ef7dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TaskManager_Swift.TaskTable.update(task: TaskManager_Swift.Tasks) async -&gt; Swift.Int64"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/data/database/tables/TaskTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "1824">
+               </Location>
+               <Location
+                  uuid = "44E9917D-FF46-4642-95B6-C7E513AFD416 - 725b8ebc080ef7dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TaskManager_Swift.TaskTable.update(task: TaskManager_Swift.Tasks) async -&gt; Swift.Int64"
+                  moduleName = "TaskManager Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charlesraj/Files/IOS%20Projects/TaskManager%20Swift/TaskManager%20Swift/data/database/tables/TaskTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "2292">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
