@@ -18,12 +18,18 @@ struct Dialogs: View {
 
 struct CreateTaskDialog : View {
     
+    @State var selectedDate = Date()
+    @State var datePickerAction: (Bool) -> ()
     @State var taskModel = Tasks()
     
     @State private var offset: CGFloat = 1000
     @State var onDismiss: () -> ()
     @State var onAdd: (_ taskModel : Tasks) -> ()
+
     
+    @State private var date = Date()
+    
+    @State private var showDatePicker = false
     
     var body: some View {
         
@@ -68,34 +74,38 @@ struct CreateTaskDialog : View {
                                     .stroke(.black, lineWidth: 1.0 )
                             )
                     
-                        TextField("21/04/2024", text: $taskModel.taskDate,
-                                  onEditingChanged: {_ in
-                            
-                        }, onCommit: { })
-                            .font(Font.itim(size: 18))
-                            .accentColor(.blue)
-                            .foregroundColor(.black)
-                            .padding()
-                            .colorMultiply(.black)
-                            .textInputAutocapitalization(.sentences)
-                            .disableAutocorrection(true)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(.black, lineWidth: 1.0 )
-                            )
+//                        TextField("21/04/2024", text: $taskModel.taskDate,
+//                                  onEditingChanged: {_ in
+//                            
+//                        }, onCommit: { })
+//                            .font(Font.itim(size: 18))
+//                            .accentColor(.blue)
+//                            .foregroundColor(.black)
+//                            .padding()
+//                            .colorMultiply(.black)
+//                            .textInputAutocapitalization(.sentences)
+//                            .disableAutocorrection(true)
+//                            .overlay(
+//                                RoundedRectangle(cornerRadius: 10)
+//                                    .stroke(.black, lineWidth: 1.0 )
+//                            )
+//                            .disabled(true)
+//                            .onTapGesture {
+//                                let date = datePickerAction(true)
+//                            }
                         
-                        HStack (alignment: .center) {
-                            Image.addIcon
-                                .resizable()
-                                .scaledToFit()
-                                .colorMultiply(.black)
-                                .frame(width: 16, height: 16)
-                                .padding()
-                        }
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(.black, lineWidth: 1.0)
-                        )
+//                        HStack (alignment: .center) {
+//                            Image.addIcon
+//                                .resizable()
+//                                .scaledToFit()
+//                                .colorMultiply(.black)
+//                                .frame(width: 16, height: 16)
+//                                .padding()
+//                        }
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 8)
+//                                .stroke(.black, lineWidth: 1.0)
+//                        )
                         
                         HStack(alignment: .center){
                             Spacer()

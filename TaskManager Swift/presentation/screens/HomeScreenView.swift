@@ -20,23 +20,21 @@ struct HomeScreenView: View {
     
     @State private var openMenuLayout = true
     @State private var showCreateDialog = false
-    @State private var cItem = ["item 1", "item 2", "item 3"]
-    let items = [
-         Item(label: "Label 1", systemName: "square"),
-         Item(label: "Label 2", systemName: "circle"),
-         Item(label: "Label 3", systemName: "triangle")
-     ]
+    
+    @State private var showDatePickerSheet = false
+    @State private var selectedDate = Date()
+    
     
     var body: some View {
         
         GeometryReader { parent in
             
             HStack(alignment: .center){
-                Image.profileIcon
-                    .resizable().aspectRatio(contentMode:.fit).frame(width: 60, height: 60)
-//                    .clipShape(Circle())
-                    .cornerRadius(30)
-                    .shadow(color: Color.black.opacity(0.3), radius: 6, x: 0, y: 0)
+//                Image.profileIcon
+//                    .resizable().aspectRatio(contentMode:.fit).frame(width: 60, height: 60)
+////                    .clipShape(Circle())
+//                    .cornerRadius(30)
+//                    .shadow(color: Color.black.opacity(0.3), radius: 6, x: 0, y: 0)
             }
             .frame(width: parent.size.width, height: 60, alignment: Alignment.trailing)
             .background(Color.primaryLightColor)
@@ -80,12 +78,13 @@ struct HomeScreenView: View {
                 } else {
                     Color.clear
                 }
-                
-                Text("Completed Tasks")
-                    .font(Font.itim(size: 20))
-                    .foregroundColor(Color.black)
-                
+            
                 if homeViewModel.completedTaskList.count > 0 {
+                    
+                    Text("Completed Tasks")
+                        .font(Font.itim(size: 20))
+                        .foregroundColor(Color.black)
+                    
                     List {
                         ForEach (homeViewModel.completedTaskList, id: \.self) { item in
                             TaskItem(task: item, isChecked: true, onChecked: { isChecked in
@@ -112,9 +111,10 @@ struct HomeScreenView: View {
                     }
                     .frame(height: 130)
                     .listStyle(.plain)
-                } else {
-                    Color.clear
-                }
+                } 
+//                else {
+//                    Color.clear
+//                }
                 
             }
             .frame(maxWidth: .infinity)
@@ -140,22 +140,51 @@ struct HomeScreenView: View {
             
             
             if showCreateDialog {
-                CreateTaskDialog(onDismiss: {
+                CreateTaskDialog(
+                    selectedDate : selectedDate,
+                    datePickerAction : { showDatePicker in
+                        showDatePickerSheet = showDatePicker
+                    },
+                onDismiss: {
                     print("Dismiss Tapped ")
                     showCreateDialog = false
                 }, onAdd: {taskModel in
-//                    let taskId = TaskTable.shared.insert(task: taskModel)
-                    
                 homeViewModel.homeEvents(event: HomeEvents.addTask(taskModel))
                     showCreateDialog = false
-                    
                 })
             }
-            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.white)
-        
+        .sheet(
+            isPresented: $showDatePickerSheet,
+               onDismiss: {
+                   showDatePickerSheet = false
+        }, content: {
+            
+            VStack{
+                DatePicker("Select End Date",
+                           selection: $selectedDate,
+                           displayedComponents: [.date]
+                )
+                .datePickerStyle(.graphical)
+                
+                HStack (alignment : .center){
+                    Spacer()
+                    Spacer()
+                    ThemePrimaryButton(text: "Cancel", type: 0, onSubmit: {
+                        showDatePickerSheet = false
+                    })
+                    Spacer()
+                        .frame(width: 10, height: 2, alignment: .center)
+                    ThemePrimaryButton(text: "Ok", type: 1, onSubmit: {
+                        print(selectedDate)
+                         showDatePickerSheet = false
+                    })
+                }
+                
+            }
+        })
     }
 }
 
@@ -206,23 +235,23 @@ struct TaskItem: View {
             Spacer()
             Spacer()
             
-            Image.fileIcon
-                .frame(width: 13, height: 13)
-                .padding(3)
-                .background{
-//                    RoundedRectangle(cornerRadius: 8)
-//                        .fill(.gray.opacity(0.3))
-                }
-                .overlay(alignment: .bottomLeading, content: {
-                    Text("5")
-                        .foregroundColor(.black)
-                        .frame(width: 10, height: 10)
-                        .background{
-                            RoundedRectangle(cornerRadius: 8)
-                                .fill(.white.opacity(1))
-                        }
-                        .font(Font.itim(size: 10))
-                })
+//            Image.fileIcon
+//                .frame(width: 13, height: 13)
+//                .padding(3)
+//                .background{
+////                    RoundedRectangle(cornerRadius: 8)
+////                        .fill(.gray.opacity(0.3))
+//                }
+//                .overlay(alignment: .bottomLeading, content: {
+//                    Text("5")
+//                        .foregroundColor(.black)
+//                        .frame(width: 10, height: 10)
+//                        .background{
+//                            RoundedRectangle(cornerRadius: 8)
+//                                .fill(.white.opacity(1))
+//                        }
+//                        .font(Font.itim(size: 10))
+//                })
             
             HStack{
                 

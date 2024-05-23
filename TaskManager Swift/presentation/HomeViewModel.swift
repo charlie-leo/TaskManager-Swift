@@ -78,7 +78,7 @@ class HomeViewModel : ObservableObject {
         Task(priority: .background, operation: {
             let list = await getAllTaskUseCase.execute()
             DispatchQueue.main.async {
-                self.taskList = list
+                self.taskList = list.reversed()
             }
         })
     }
@@ -87,7 +87,7 @@ class HomeViewModel : ObservableObject {
         Task(priority: .background, operation: {
             let list  = await getCompletedTaskUseCase.execute()
             DispatchQueue.main.async{
-                self.completedTaskList = list
+                self.completedTaskList = list.reversed()
             }
         })
     }
